@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Calcular imposto de renda</title>
+<script type="text/javascript">
+
+    let taxa
+    let salario = parseInt(prompt("Digite seu salario: "))
+    
+    if(salario == 1434){
+        taxa = (salario*0)/100
+        alert("Valor da taxa em reais " + taxa + " R$, valor do alíquota 0% ")
+    }else 
+         if(salario > 1434 && salario <= 2150){
+            taxa = (salario*7.5)/100
+            alert("Valor da taxa em reais " + taxa + " R$, valor do alíquota 7,5% ") 
+    }else 
+         if(salario => 2151 && salario <= 2866){
+            taxa = (salario*15)/100
+            alert("Valor da taxa em reais " + taxa + " R$, valor do alíquota 15% ") 
+    }else 
+        if(salario => 2867 && salario <= 3582){
+            taxa = (salario*22.5)/100
+            alert("Valor da taxa em reais " + taxa + " R$, valor do alíquota 22,5% ") 
+    }else 
+        if(salario => 3582){
+        taxa = (salario*27.5)/100
+        alert("Valor da taxa em reais " + taxa + " R$, valor do alíquota 27,5 % ") 
+         }
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

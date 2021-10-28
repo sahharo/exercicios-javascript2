@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Exercicio 5</title>
+<script type="text/javascript">
+
+    alert("Escolha o codigo de acordo a modalidade \n" +
+    "codigo 1 = á vista \n" +
+    "codigo 2 = débito \n" +
+    "codigo 3 = crédito")
+let resposta
+let n1 = parseInt(prompt("Digite o codigo de acordo a modalidade"))
+let valor = parseInt(prompt("Digite o valor do produto")) 
+    if(n1 == 1){
+         resposta = (valor*10)/100
+        alert("O desconto será: " + resposta + " Reais")
+    }else
+          if(n1 == 2){
+              resposta = (valor*2)/100+valor
+            alert("Terá um acrescimo de 2% " + resposta + " Reais")         
+          }else if(n1 == 3){
+            resposta = (valor*7)/100+valor
+              alert("Terá um acrescimo de 7% de juros " + resposta + " Reais")
+          }
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
